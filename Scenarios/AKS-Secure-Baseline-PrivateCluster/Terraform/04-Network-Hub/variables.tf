@@ -9,11 +9,13 @@ variable "tags" {
   type = map(string)
 
   default = {
-    project = "cs-aks"
+    project = "akslz-poc",
+    doi    = "070323"
   }
 }
 
-variable "hub_prefix" {}
+variable "hub_prefix" {
+}
 
 variable "sku_name" {
   default = "AZFW_VNet"
