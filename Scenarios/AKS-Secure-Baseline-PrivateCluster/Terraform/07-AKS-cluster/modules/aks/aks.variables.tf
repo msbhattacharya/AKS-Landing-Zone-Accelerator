@@ -33,5 +33,6 @@ variable "pod_cidr" {}
 
 variable "k8s_version" {
   description = "Kubernetes version to assign to the AKS Cluster"
+  default = "1.25.4"
 }
 

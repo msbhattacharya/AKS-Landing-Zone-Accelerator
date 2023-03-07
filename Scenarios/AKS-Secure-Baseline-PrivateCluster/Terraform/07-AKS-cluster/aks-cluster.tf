@@ -166,12 +166,12 @@ resource "azurerm_role_assignment" "aks-to-acr" {
 # This must be granted after the cluster is created in order to use the ingress identity.
 # Based on the instances of AKS Clusters deployed are defined the role assignments per each cluster, this is mainly used in the blue green deployment scenario.
 
-resource "azurerm_role_assignment" "agic_appgw" {
-  for_each             = module.aks
-  scope                = each.value.appgw_id
-  role_definition_name = "Contributor"
-  principal_id         = module.aks.agic_id
-}
+#resource "azurerm_role_assignment" "agic_appgw" {
+#  for_each             = module.aks
+#  scope                = each.value.appgw_id
+#  role_definition_name = "Contributor"
+#  principal_id         = module.aks.agic_id
+#}
 
 # Route table to support AKS cluster with kubenet network plugin
 
