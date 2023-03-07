@@ -7,7 +7,7 @@ variable "location" {
 
 variable "tags" {
   type = map(string)
-
+  
   default = {
     project = "akslz-poc",
     doi    = "070323"
