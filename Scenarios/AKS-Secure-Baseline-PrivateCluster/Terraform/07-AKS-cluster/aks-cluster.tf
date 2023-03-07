@@ -183,7 +183,7 @@ resource "azurerm_route_table" "rt" {
   resource_group_name           = data.terraform_remote_state.existing-lz.outputs.lz_rg_name
   disable_bgp_route_propagation = false
 
-}`
+}
 
 resource "azurerm_subnet_route_table_association" "rt_kubenet_association" {
   count = var.network_plugin == "kubenet" ? 1 : 0

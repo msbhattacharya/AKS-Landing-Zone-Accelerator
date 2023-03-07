@@ -3,9 +3,9 @@
 #############
 
 variable "aks_admin_group" {
-    default = "AKS App Admin Team"
+    default = "aks_admin_group"
 }
 
 variable "aks_user_group" {
-    default = "AKS App Admin Team"
+    default = "aks_user_group"
 }
